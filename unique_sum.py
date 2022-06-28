@@ -1,7 +1,7 @@
-n=int(input())
+a=int(input())
 a=list(map(int,input().split()))
-b=set(a)
-s=0
-for i in b:
-            s+=i
-print(s)
+a=set(a)
+c=0
+for i in a:
+        c+=i
+print(c)
