@@ -5,6 +5,6 @@ for i in a:
         if i not in b:
             b=b+i
 if(len(b)==5):
-    print("True")
+    print('True')
 else:
-    print("False")
+    print('False')
