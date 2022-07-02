@@ -1,8 +1,12 @@
 a=input()
-b=""
+c=0
+b=''
 for i in a:
+    if i not in b:
+        b=b+i
+for i in b:
     if i in "aeiouAEIOU":
-        if i not in b:
-            b=b+i
-for j in b:
-    print(j,end=' ')
+        print(i,end=" ")
+        c+=1
+if c==0:
+    print("-1")
