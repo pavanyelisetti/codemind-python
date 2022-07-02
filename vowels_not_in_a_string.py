@@ -1,15 +1,12 @@
 a=input()
-b=''
-c="aeiou"
-s=0
-for i in  a:
-    if i in "aeiouAEIOU":
-        b=b+i
-for i in c:
-    if i not in b:
-        print(i,end=' ')
-        s=1
-if(s==0):
+a=set(a)
+v="aeiou"
+s=""
+for i in a:
+    if i in v:
+        s=s+i
+for i in v:
+    if i not in s:
+        print(i,end=" ")
+if len(s)==5:
     print("0")
-
-
