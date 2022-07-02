@@ -1,10 +1,10 @@
-n=input()
-n=n.lower()
-n=set(n)
+a=input()
+a=a.lower()
 s=""
-for i in n:
-    if i!=" ":
+for i in a:
+    if a.count(i)==1:
         s=s+i
 s=sorted(s)
 for i in s:
-    print(i,end="")
+    if i!=" ":
+        print(i,end="")
