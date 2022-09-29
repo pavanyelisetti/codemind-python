@@ -13,5 +13,3 @@ for j in a:
         k+=x[i]
         i+=1
 print(k)
-        
-        
