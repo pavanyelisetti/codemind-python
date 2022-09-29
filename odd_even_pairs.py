@@ -17,4 +17,3 @@ for x in range(max(len(c),len(d))):
             print(d[x],end=" ")
 if n%2==1:
     print(0)
-        
