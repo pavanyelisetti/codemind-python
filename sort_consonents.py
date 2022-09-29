@@ -18,5 +18,3 @@ for i in a:
     n+=" "
 n=n.split()
 print(*n)
-            
-            
