@@ -1,7 +1,4 @@
-a=list(map(str,input().split()))
-c=sorted(a)
-for i in c:
-    if i!=" ":
-        print(i,end=" ")
-
-    
+a=input()
+a=a.split()
+a=sorted(a)
+print(*a)
