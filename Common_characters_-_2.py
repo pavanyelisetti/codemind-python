@@ -12,4 +12,3 @@ for j in l:
     if c==len(a)-1:
         k+=j
 print(len(k))
-        
