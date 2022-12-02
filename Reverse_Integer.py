@@ -1,19 +1,17 @@
 n=int(input())
 temp=n
-rev=0
-if(n>0):
-    while(temp>0):
-        r=temp%10
-        rev=rev*10+r
-        temp=temp//10
-    print(rev)
-if(n<0):
+while(1):
+    if n%10!=0:
+        break
+    else:
+        n//=10
+c=0
+if n<0:
     n=n*-1
-    temp=n
-    while(temp>0):
-        r=temp%10
-        rev=rev*10+r
-        temp=temp//10
-    c='-'+str(rev)
-    print(c)
-    
+    c+=1
+x=str(n)
+x=x[::-1]
+if c>0:
+    print("-"+x)
+else:
+    print(x)
