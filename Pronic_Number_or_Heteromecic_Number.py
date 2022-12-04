@@ -1,14 +1,10 @@
 n=int(input())
-x=0
-for i in range(1,n+1):
-    for j in range(1,n+1):
-        if i!=j:
-            if i*j==n:
-                if abs(i-j)==1:
-                    print("YES")
-                    x=1
-                    break
-    if x==1:
+c=0
+for i in range(n):
+    if (i)*(i+1)==n:
+        c=1
         break
-if(x==0):
+if c==1:
+    print("YES")
+else:
     print("NO")
